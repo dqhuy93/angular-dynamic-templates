@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html ng-app="myApp">
+<head>
+    <title>AngularJS Dynamic Template</title>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <script type="text/javascript" src="vendor/jquery.min.js"></script>
+    <script type="text/javascript" src="vendor/angular.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+
+    <link rel="stylesheet" href="css/layout.css">
+    <style type="text/css">
+        body{
+            background-image: none;
+            font-size: 14px;
+            padding: 0;
+            margin: 0;
+        }
+    	section{
+    		display: block;
+    	}
+        section ul {
+            margin: 0;
+            padding: 0;
+        }
+        section ul li{
+            display: block;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ccc;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        section ul li>div{
+            margin-bottom: 5px;
+        }
+        h1{
+            display: block;
+            margin: 0 0 15px 0;
+            padding: 15px;
+            background-color: red;
+            color: #FFF;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div id="container" ng-controller="ContentCtrl">
+    <section content-item ng-repeat="item in content | limitTo:limit" length-section="content.length" section="item"></section>
+</div>
+
+</body>
+</html>

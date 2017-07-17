@@ -1,0 +1,12 @@
+<section style="background-color: #aaa">
+	<ul>
+		<h1>{{section.title}}</h1>
+		<li ng-repeat="item in dataTemplate track by $index">
+			<div><span>postId</span> : <strong>{{item.postId}}</strong></div>
+			<div><span>id</span> : <strong>{{item.id}}</strong></div>
+			<div><span>Name</span> : <strong>{{item.name}}</strong></div>
+			<div><span>Email</span> : <strong>{{item.email}}</strong></div>
+			<div><span>Address</span> : <strong>{{item.body}}</strong></div>
+		</li>
+	</ul>
+</section>

@@ -1,0 +1,28 @@
+
+[
+    {
+		"link_template" : "template_1.html", 
+		"title" : "Template 1", 
+		"link_api": "https://jsonplaceholder.typicode.com/posts/1/comments"
+	},
+    {
+        "link_template" : "template_2.html", 
+        "title" : "Template 2", 
+        "link_api": "https://jsonplaceholder.typicode.com/posts/2/comments"
+    },
+    {
+        "link_template" : "template_3.html", 
+        "title" : "Template 3", 
+        "link_api": "https://jsonplaceholder.typicode.com/posts/3/comments"
+    },
+    {
+        "link_template" : "template_4.html", 
+        "title" : "Template 4", 
+        "link_api": "https://jsonplaceholder.typicode.com/posts/4/comments"
+    },
+    {
+        "link_template" : "template_5.html", 
+        "title" : "Template 5", 
+        "link_api": "https://jsonplaceholder.typicode.com/posts/5/comments"
+    }
+]
